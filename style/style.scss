@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+section{
+   position: relative;
+   height: 100vh;
+   background-color: rgb(16, 15, 17);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Poppins";
+}
+section::before{
+   content: "";
+   position: absolute;
+   width: 450px;
+   height: 450px;
+   border-radius: 50%;
+   background: linear-gradient(#fbfc00, #f14317);
+   transform: translate(-250px , -120px);
+}
+section::after{
+   content: "";
+   position: absolute;
+   width: 350px;
+   height: 350px;
+   border-radius: 50%;
+   background: linear-gradient(#00eefc, #6cf117);
+   transform: translate(250px , 120px);
+}
+.box{
+   min-width: 350px;
+   min-height: 400px;
+   background: rgba(255 , 255, 255, 0.1);
+   border-radius: 10px;
+   padding: 10px;
+   z-index: 10;
+   position: relative;
+   backdrop-filter: blur(25px);
+   >h3{
+      color: #fff;
+   }
+}
+.list {
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+   padding: 10px;
+   background: rgba(0, 0, 0,0.1);
+   border-radius: 10px;
+   transition: 0.5s;
+   overflow: hidden;
+   &:hover{
+      background-color: #fff;
+      transform: scale(1.2) translateX(30px) translateY(-15px);
+      h3{
+         right: 20px;
+         opacity: 1;
+      }
+      .content{
+         color: #333;
+      }
+   }
+   h3{
+      position: absolute;
+      font-size: 1.8em;
+      right: -50px;
+      color: rgb(129, 129, 233);
+      transition: 0.5s;
+      opacity: 0;
+      small{
+         font-weight: 500;
+         opacity: 0.5;
+      }
+   }
+}
+.imgbx {
+   width: 60px;
+   height: 60px;
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+   margin-right: 10px;
+   transition: 0.5s;
+   img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+.content {
+   color: #fff;
+   h2{
+      font-size: 1.2em;
+      transition: 0.5s;
+   }
+   p{
+      font-size: 0.85em;
+      transition: 0.5s;
+   }
+}
+

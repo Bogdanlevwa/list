@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  background-color: #100f11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfc00), to(#f14317));
+  background: linear-gradient(#fbfc00, #f14317);
+  -webkit-transform: translate(-250px, -120px);
+          transform: translate(-250px, -120px);
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00eefc), to(#6cf117));
+  background: linear-gradient(#00eefc, #6cf117);
+  -webkit-transform: translate(250px, 120px);
+          transform: translate(250px, 120px);
+}
+
+.box {
+  min-width: 350px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 10;
+  position: relative;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+}
+
+.box > h3 {
+  color: #fff;
+}
+
+.list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.list:hover {
+  background-color: #fff;
+  -webkit-transform: scale(1.2) translateX(30px) translateY(-15px);
+          transform: scale(1.2) translateX(30px) translateY(-15px);
+}
+
+.list:hover h3 {
+  right: 20px;
+  opacity: 1;
+}
+
+.list:hover .content {
+  color: #333;
+}
+
+.list h3 {
+  position: absolute;
+  font-size: 1.8em;
+  right: -50px;
+  color: #8181e9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.list h3 small {
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.imgbx {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content {
+  color: #fff;
+}
+
+.content h2 {
+  font-size: 1.2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content p {
+  font-size: 0.85em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
